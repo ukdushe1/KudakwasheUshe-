@@ -11,6 +11,8 @@ interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
 
 const Card = React.forwardRef<HTMLDivElement, CardProps>(
   ({ className, hover = true, children, ...props }, ref) => {
+    const { onDrag, onDragEnd, onDragStart, onAnimationStart, onAnimationEnd, ...restProps } = props
+    
     return (
       <motion.div
         ref={ref}
@@ -20,7 +22,7 @@ const Card = React.forwardRef<HTMLDivElement, CardProps>(
           hover && 'hover:shadow-lg transition-shadow duration-200',
           className
         )}
-        {...props}
+        {...restProps}
       >
         {children}
       </motion.div>

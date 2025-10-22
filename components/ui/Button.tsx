@@ -1,6 +1,7 @@
 'use client'
 
 import React from 'react'
+import Link from 'next/link'
 import { cn } from '@/lib/utils'
 import { motion } from 'framer-motion'
 
@@ -9,10 +10,11 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   size?: 'sm' | 'md' | 'lg'
   loading?: boolean
   children: React.ReactNode
+  href?: string
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant = 'primary', size = 'md', loading = false, children, disabled, ...props }, ref) => {
+  ({ className, variant = 'primary', size = 'md', loading = false, children, disabled, href, ...props }, ref) => {
     const baseClasses = 'inline-flex items-center justify-center rounded-lg font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none'
     
     const variants = {
@@ -28,20 +30,17 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       lg: 'px-6 py-3 text-lg'
     }
 
-    return (
-      <motion.button
-        ref={ref}
-        whileHover={{ scale: 1.02 }}
-        whileTap={{ scale: 0.98 }}
-        className={cn(
-          baseClasses,
-          variants[variant],
-          sizes[size],
-          className
-        )}
-        disabled={disabled || loading}
-        {...props}
-      >
+    const commonProps = {
+      className: cn(
+        baseClasses,
+        variants[variant],
+        sizes[size],
+        className
+      )
+    }
+
+    const content = (
+      <>
         {loading && (
           <svg
             className="animate-spin -ml-1 mr-2 h-4 w-4"
@@ -65,6 +64,35 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
           </svg>
         )}
         {children}
+      </>
+    )
+
+    if (href) {
+      return (
+        <Link href={href} passHref>
+          <motion.span
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            {...commonProps}
+          >
+            {content}
+          </motion.span>
+        </Link>
+      )
+    }
+
+    const { onDrag, onDragEnd, onDragStart, onAnimationStart, onAnimationEnd, ...restProps } = props
+    
+    return (
+      <motion.button
+        ref={ref}
+        whileHover={{ scale: 1.02 }}
+        whileTap={{ scale: 0.98 }}
+        disabled={disabled || loading}
+        {...commonProps}
+        {...restProps}
+      >
+        {content}
       </motion.button>
     )
   }

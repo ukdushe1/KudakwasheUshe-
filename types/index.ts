@@ -28,7 +28,7 @@ export interface ProjectResult {
 export interface Tool {
   name: string
   icon: string
-  category: 'language' | 'framework' | 'database' | 'visualization' | 'cloud'
+  category: 'language' | 'framework' | 'database' | 'visualization' | 'cloud' | 'tools'
 }
 
 export interface BlogPost {
