@@ -54,7 +54,7 @@ const Footer: React.FC = () => {
     },
     { 
       name: 'Email', 
-      href: 'mailto:ushekudakwashe@email.com', 
+      href: 'mailto:ushekudakwashe@gmail.com', 
       icon: Mail,
       color: 'hover:text-red-500' 
     },
@@ -90,7 +90,7 @@ const Footer: React.FC = () => {
               </div>
               <div className="flex items-center">
                 <Mail className="w-4 h-4 mr-2" />
-                ushekudakwashe@email.com
+ushekudakwashe@gmail.com
               </div>
             </div>
           </motion.div>
