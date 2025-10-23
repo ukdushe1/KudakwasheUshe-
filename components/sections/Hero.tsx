@@ -77,7 +77,7 @@ const Hero: React.FC = () => {
             transition={{ delay: 0.2 }}
             className="text-lg text-secondary-600 dark:text-secondary-400 mb-4"
           >
-            👋 Hello, I'm Kudakwashe Ushe
+            👋 Hello, I&apos;m Kudakwashe Ushe
           </motion.p>
 
           {/* Main Heading with Typing Effect */}
@@ -100,7 +100,7 @@ const Hero: React.FC = () => {
             className="text-xl md:text-2xl text-secondary-600 dark:text-secondary-300 max-w-3xl mx-auto mb-8 leading-relaxed"
           >
             I transform complex data into actionable insights while managing large-scale IT infrastructure. 
-            Specializing in educational technology, data analytics, and system administration across Zimbabwe's education sector.
+            Specializing in educational technology, data analytics, and system administration across Zimbabwe&apos;s education sector.
           </motion.p>
 
           {/* Stats */}

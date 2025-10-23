@@ -148,7 +148,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
               Message sent successfully!
             </h4>
             <p className="text-sm text-green-600 dark:text-green-400">
-              Thank you for reaching out. I'll get back to you within 24 hours.
+              Thank you for reaching out. I&apos;ll get back to you within 24 hours.
             </p>
           </div>
         </motion.div>

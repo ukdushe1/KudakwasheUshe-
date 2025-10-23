@@ -55,7 +55,7 @@ const CTA: React.FC = () => {
           </h2>
           
           <p className="text-xl md:text-2xl text-primary-100 max-w-4xl mx-auto mb-12 leading-relaxed">
-            Let's turn your data challenges into competitive advantages. 
+            Let&apos;s turn your data challenges into competitive advantages. 
             Get started with a free consultation to explore how data science 
             can accelerate your business growth.
           </p>

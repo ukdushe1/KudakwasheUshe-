@@ -102,14 +102,14 @@ export default function AboutPage() {
               </h1>
               
               <p className="text-xl text-secondary-600 dark:text-secondary-400 mb-6 leading-relaxed">
-                I'm a dedicated Information Systems professional with 10+ years of progressive experience 
+                I&apos;m a dedicated Information Systems professional with 10+ years of progressive experience 
                 in IT operations, network administration, and data science. Currently serving as an IT Administrator 
                 and Computer Science Teacher with the Ministry of Education in Zimbabwe.
               </p>
               
               <p className="text-lg text-secondary-600 dark:text-secondary-400 mb-8 leading-relaxed">
                 My expertise spans managing large-scale IT infrastructure serving 500+ users, data analysis, 
-                and educational technology. I'm passionate about leveraging technology and data science to 
+                and educational technology. I&apos;m passionate about leveraging technology and data science to 
                 drive educational outcomes and organizational efficiency.
               </p>
 

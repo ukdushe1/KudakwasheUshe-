@@ -200,7 +200,7 @@ const Services: React.FC = () => {
             Ready to Transform Your Data?
           </h3>
           <p className="text-secondary-600 dark:text-secondary-400 mb-8 max-w-2xl mx-auto">
-            Let's discuss how I can help your business unlock the power of data 
+            Let&apos;s discuss how I can help your business unlock the power of data 
             and drive meaningful growth through analytics.
           </p>
           

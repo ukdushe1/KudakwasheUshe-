@@ -391,7 +391,7 @@ export default function ServicesPage() {
               Client Success Stories
             </h2>
             <p className="text-xl text-secondary-600 dark:text-secondary-400 max-w-3xl mx-auto">
-              See what clients have to say about working with me and the results we've achieved together.
+              See what clients have to say about working with me and the results we&apos;ve achieved together.
             </p>
           </motion.div>
 
@@ -411,7 +411,7 @@ export default function ServicesPage() {
                       ))}
                     </div>
                     <blockquote className="text-secondary-700 dark:text-secondary-300 mb-6 italic leading-relaxed">
-                      "{testimonial.content}"
+                      &ldquo;{testimonial.content}&rdquo;
                     </blockquote>
                     <div className="flex items-center">
                       <img
@@ -514,7 +514,7 @@ export default function ServicesPage() {
               Ready to Transform Your Business with Data?
             </h2>
             <p className="text-xl text-primary-100 max-w-3xl mx-auto mb-8">
-              Let's discuss your specific challenges and how my data science expertise 
+              Let&apos;s discuss your specific challenges and how my data science expertise 
               can help you achieve measurable results.
             </p>
 

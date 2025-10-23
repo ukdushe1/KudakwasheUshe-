@@ -146,7 +146,7 @@ const FeaturedProjects: React.FC = () => {
             Featured Projects
           </h2>
           <p className="text-xl text-secondary-600 dark:text-secondary-400 max-w-3xl mx-auto">
-            Discover how I've helped businesses transform their data into competitive advantages 
+            Discover how I&apos;ve helped businesses transform their data into competitive advantages 
             through strategic analytics and machine learning solutions.
           </p>
         </motion.div>

@@ -380,7 +380,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
                 Interested in Similar Results?
               </h2>
               <p className="text-primary-100 mb-8 text-lg">
-                Let's discuss how I can help you achieve comparable success with your data challenges.
+                Let&apos;s discuss how I can help you achieve comparable success with your data challenges.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/contact">

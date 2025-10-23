@@ -65,7 +65,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service, index = 0 }) => {
           <div className="space-y-6">
             <div>
               <h4 className="font-semibold text-secondary-900 dark:text-white mb-3">
-                What's Included:
+                What&apos;s Included:
               </h4>
               <ul className="space-y-2">
                 {service.features.map((feature, i) => (

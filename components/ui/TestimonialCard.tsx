@@ -40,7 +40,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial, index = 
           </div>
           
           <blockquote className="text-secondary-700 dark:text-secondary-300 mb-6 italic leading-relaxed">
-            "{testimonial.content}"
+            &ldquo;{testimonial.content}&rdquo;
           </blockquote>
           
           <div className="flex items-center">

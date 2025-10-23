@@ -180,7 +180,7 @@ export default function ProjectsPage() {
                 {searchQuery.trim() && (
                   <>
                     {selectedCategory !== 'all' ? ' • ' : ''}
-                    Search: "{searchQuery}"
+                    Search: &ldquo;{searchQuery}&rdquo;
                   </>
                 )}
               </p>
@@ -208,7 +208,7 @@ export default function ProjectsPage() {
                 No Projects Found
               </h3>
               <p className="text-secondary-600 dark:text-secondary-400 mb-6">
-                Try adjusting your search terms or filters to find what you're looking for.
+                Try adjusting your search terms or filters to find what you&apos;re looking for.
               </p>
               <Button onClick={clearFilters}>
                 Clear All Filters
@@ -231,7 +231,7 @@ export default function ProjectsPage() {
               Have a Similar Challenge?
             </h2>
             <p className="text-xl text-secondary-600 dark:text-secondary-400 max-w-3xl mx-auto mb-8">
-              Let's discuss how I can help you solve your data challenges and achieve 
+              Let&apos;s discuss how I can help you solve your data challenges and achieve 
               measurable results for your business.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
